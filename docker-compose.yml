@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5434:5432"
+  simple-run-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: ["java",  "-jar", "/app.jar"]
+    environment:
+      - POSTGRES_URL=postgres:5432
+    ports:
+      - "3011:8080"

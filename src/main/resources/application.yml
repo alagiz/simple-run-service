@@ -1,0 +1,24 @@
+spring:
+  management:
+    endpoint:
+      health:
+        show-details: always
+    endpoints:
+      web:
+        cors:
+          allowed-origins: "*"
+          allowed-methods: OPTIONS, GET
+          allowed-headers: "*"
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_URL}/postgres # postgres:5432 for docker network / localhost:5433 for local development
+    username: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: false
+    hibernate:
+      ddl-auto: update

@@ -17,7 +17,7 @@ public class RunResult {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String id;
+    private long id;
 
     @Column(name = "user_id")
     @JsonProperty

@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface IRunResultsRepository extends CrudRepository<RunResult, Long> {
-    RunResult findById(@Param("id") String id);
+    RunResult findById(@Param("id") long id);
 
     List<RunResult> findAllByUserId(@Param("userId") String userId);
 }

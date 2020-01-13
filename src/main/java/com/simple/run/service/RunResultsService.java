@@ -20,7 +20,7 @@ public class RunResultsService {
         return runResultsRepository.findAllByUserId(userId);
     }
 
-    public RunResult getRunResultsId(String runResultId) {
+    public RunResult getRunResultsId(long runResultId) {
         return runResultsRepository.findById(runResultId);
     }
 

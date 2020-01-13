@@ -1,12 +1,11 @@
 package com.simple.run.service;
 
-import java.util.List;
-
+import com.simple.run.model.RunResult;
+import com.simple.run.repository.IRunResultsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.simple.run.model.RunResult;
-import com.simple.run.repository.IRunResultsRepository;
+import java.util.List;
 
 @Service
 public class RunResultsService {
@@ -25,9 +24,7 @@ public class RunResultsService {
         return runResultsRepository.findById(runResultId);
     }
 
-    public void saveRunResults(RunResult runResult, String userId) {
-        runResult.setUserId(userId);
-
+    public void saveRunResults(RunResult runResult) {
         runResultsRepository.save(runResult);
     }
 }

@@ -39,7 +39,7 @@ public class RunResultServiceTest {
 
     @Test
     public void shallCallSaveOfIRunResultsRepository_WhenSaveRunResultsIsCalled() {
-        runResultsService.saveRunResults(runResult, userId);
+        runResultsService.saveRunResults(runResult);
 
         verify(iRunResultsRepository, times(1)).save(runResult);
     }

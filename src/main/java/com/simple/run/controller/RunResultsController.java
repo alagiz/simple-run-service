@@ -69,7 +69,7 @@ public class RunResultsController {
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
-    public void createReport(@RequestBody RunResult runResult, @RequestParam String userId) {
-        runResultsService.saveRunResults(runResult, userId);
+    public void createReport(@RequestBody RunResult runResult) {
+        runResultsService.saveRunResults(runResult);
     }
 }

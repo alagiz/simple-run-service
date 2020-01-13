@@ -1,18 +1,14 @@
 package com.simple.run.model;
 
-import java.sql.Timestamp;
-
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.*;
+import java.sql.Timestamp;
+
+@Entity
 @Setter
 @Getter
 public class RunResult {
@@ -36,10 +32,10 @@ public class RunResult {
     @Column(name = "duration")
     @JsonProperty
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Integer durationInMinutes;
+    private Long durationInMinutes;
 
     @Column(name = "distance")
     @JsonProperty
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Integer distanceInMeters;
+    private Long distanceInMeters;
 }

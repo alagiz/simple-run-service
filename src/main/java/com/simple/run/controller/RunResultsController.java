@@ -49,8 +49,8 @@ public class RunResultsController {
             @ApiResponse(code = 403, message = "Accessing the resource you were trying to reach is forbidden"),
             @ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
     })
-    public RunResult getRunResultsById(@PathVariable long runResultId) {
-        return runResultsService.getRunResultsId(runResultId);
+    public RunResult getRunResultById(@PathVariable long runResultId) {
+        return runResultsService.getRunResultById(runResultId);
     }
 
     @PostMapping

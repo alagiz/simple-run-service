@@ -24,6 +24,7 @@ public class RunResultServiceTest {
 
     private RunResult runResult = new RunResult();
     private String userId = "fake-user-id";
+    private long runResultId = 0;
 
     @Before
     public void init() {
@@ -42,5 +43,12 @@ public class RunResultServiceTest {
         runResultsService.saveRunResults(runResult);
 
         verify(iRunResultsRepository, times(1)).save(runResult);
+    }
+
+    @Test
+    public void shallCallFindByIdRepository_WhenGetRunResultByIdIsCalled() {
+        runResultsService.getRunResultById(runResultId);
+
+        verify(iRunResultsRepository, times(1)).findById(runResultId);
     }
 }

@@ -2,6 +2,7 @@ package com.simple.run.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,6 +28,7 @@ public class RunResult {
     @Column(name = "date")
     @JsonProperty
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @ApiModelProperty(value = "date", example = "2020-02-02T11:14:16")
     private Timestamp date;
 
     @Column(name = "duration")

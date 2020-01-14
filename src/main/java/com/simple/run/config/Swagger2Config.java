@@ -10,6 +10,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.sql.Timestamp;
+
 @Configuration
 @EnableSwagger2
 public class Swagger2Config {
@@ -21,7 +23,8 @@ public class Swagger2Config {
                 .apis(RequestHandlerSelectors
                         .basePackage("com.simple.run"))
                 .paths(PathSelectors.regex("/.*"))
-                .build().apiInfo(apiEndPointsInfo());
+                .build().apiInfo(apiEndPointsInfo())
+                .directModelSubstitute(Timestamp.class, String.class);
     }
 
     private ApiInfo apiEndPointsInfo() {

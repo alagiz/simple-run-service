@@ -24,7 +24,7 @@ public class RunResultsService {
         return runResultsRepository.findById(runResultId);
     }
 
-    public void saveRunResults(RunResult runResult) {
-        runResultsRepository.save(runResult);
+    public RunResult saveRunResults(RunResult runResult) {
+        return runResultsRepository.save(runResult);
     }
 }

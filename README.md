@@ -3,19 +3,19 @@
 [![build status][build badge]][BUILD_URL]
 [![coverage status][coverage badge]][COVERAGE_URL]
 
-currently deployed here: http://3.13.90.180:8082
+currently deployed here: http://artem-alagizov.com/simple-run-service
 
 ## api
 
 ### swagger
 
-available at http://3.13.90.180:8082/swagger-ui.html
+available at http://artem-alagizov.com/simple-run-service/swagger-ui.html
 
 ---
 
 ### endpoints
 
-http://3.13.90.180:8082/run-results 
+http://artem-alagizov.com/simple-run-service/run-results 
 
 ---
   * **POST** creates a run-result record in db
@@ -32,7 +32,7 @@ http://3.13.90.180:8082/run-results
   * **GET** fetches run-result or run-results
 
       * all run-results by user id: 
-        http://3.13.90.180:8082/run-results?userId=jimmy
+        http://artem-alagizov.com/simple-run-service/run-results?userId=jimmy
       * one run-result by run-result id
         http://3.13.90.180:8082/run-results/1
 

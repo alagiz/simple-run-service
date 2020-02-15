@@ -1,7 +1,8 @@
 # simple-run-service
 
-[![build status][build badge]][BUILD_URL]
-[![coverage status][coverage badge]][COVERAGE_URL]
+[![build status][build badge]][build_url]
+[![coverage status][coverage badge]][coverage_url]
+[![codacy quality status][quality badge]][quality_url]
 
 currently deployed here: http://artem-alagizov.com/simple-run-service
 
@@ -36,7 +37,9 @@ http://artem-alagizov.com/simple-run-service/run-results
       * one run-result by run-result id
         http://artem-alagizov.com/simple-run-service/run-results/1
 
-[BUILD_URL]: https://travis-ci.org/ArtemAlagizov/simple-run-service
+[build_url]: https://travis-ci.org/ArtemAlagizov/simple-run-service
 [build badge]: https://img.shields.io/travis/ArtemAlagizov/simple-run-service/master?style=flat-square
-[COVERAGE_URL]: https://coveralls.io/github/ArtemAlagizov/simple-run-service?branch=master
+[coverage_url]: https://coveralls.io/github/ArtemAlagizov/simple-run-service?branch=master
 [coverage badge]: https://img.shields.io/coveralls/github/ArtemAlagizov/simple-run-service.svg?style=flat-square&color=brightgreen
+[quality_url]: https://www.codacy.com/manual/ArtemAlagizov/simple-run-service
+[quality badge]: https://img.shields.io/codacy/grade/4c628d56c39442958bbc08edb6ad994d?style=flat-square

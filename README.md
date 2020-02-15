@@ -34,7 +34,7 @@ http://artem-alagizov.com/simple-run-service/run-results
       * all run-results by user id: 
         http://artem-alagizov.com/simple-run-service/run-results?userId=jimmy
       * one run-result by run-result id
-        http://3.13.90.180:8082/run-results/1
+        http://artem-alagizov.com/simple-run-service/run-results/1
 
 [BUILD_URL]: https://travis-ci.org/ArtemAlagizov/simple-run-service
 [build badge]: https://img.shields.io/travis/ArtemAlagizov/simple-run-service/master?style=flat-square

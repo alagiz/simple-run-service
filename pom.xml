@@ -21,7 +21,7 @@
 		<maven-surefire-plugin-version>2.19.1</maven-surefire-plugin-version>
 		<coveralls-maven-plugin-version>4.3.0</coveralls-maven-plugin-version>
 		<jacoco-maven-plugin-version>0.8.2</jacoco-maven-plugin-version>
-		<postgres.version>42.2.5</postgres.version>
+		<postgres.version>42.2.25</postgres.version>
 	</properties>
 
 	<dependencies>

@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<springfox-swagger2-version>2.9.2</springfox-swagger2-version>
-		<springfox-swagger-ui-version>2.9.2</springfox-swagger-ui-version>
+		<springfox-swagger-ui-version>2.10.0</springfox-swagger-ui-version>
 		<maven-surefire-plugin-version>2.19.1</maven-surefire-plugin-version>
 		<coveralls-maven-plugin-version>4.3.0</coveralls-maven-plugin-version>
 		<jacoco-maven-plugin-version>0.8.2</jacoco-maven-plugin-version>
